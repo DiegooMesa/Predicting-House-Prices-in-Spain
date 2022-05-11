@@ -35,7 +35,7 @@ To start the program simply `$ streamlit run main.py` !
     └── README.md
     </pre>
 ## Status
-The main aspects of the project are finished. There are still some minor bugs that will be fixed, and more features might be added in the future.
+The main aspects of the project are finished. A data analysis page is being added. There are still some minor bugs that will be fixed, and more features will be added in the future. 
 ## To do
 * Add more columns to the dataset (floor, elevator...)
 * Add more rows to the dataset (100k-200k)
