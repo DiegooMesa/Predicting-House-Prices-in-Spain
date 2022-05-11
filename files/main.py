@@ -6,6 +6,7 @@ import data_exploration as ex
 import eda 
 import ml
 import functions as func
+import data_analysis as da
 
 data = pd.read_csv("./data.csv", low_memory=False)
 #data.drop("Unnamed: 0", axis=1, inplace =True)
@@ -13,15 +14,18 @@ data = pd.read_csv("./data.csv", low_memory=False)
 st.title("Spanish Properties Project")
 st.write("by Diego Mesa")
 
-page = st.selectbox("Pages", ["Read Me", "Preliminary Data Exploration", "Exploratory Data Analysis", "Machine Learning"])
+page = st.selectbox("Pages", ["Read Me", "Dataset information", "Data Analysis", "Exploratory Data Analysis", "Machine Learning"])
 #page = "Exploratory Data Analysis"
 if page == "Read Me":
        func.README()  
-elif page == "Preliminary Data Exploration":
+elif page == "Dataset information":
        st.title(page)
        ex.data_metrics(data)
        ex.data_info(data)
        ex.map(data)
+elif page == "Data Analysis":
+       st.title(page)
+       da.intro()
 elif page == "Exploratory Data Analysis":
        st.title(page)
        eda.main(data)

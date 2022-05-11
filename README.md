@@ -1,18 +1,19 @@
 # IronHack's Final Project
 
 # About
-## What is this all about? 
-Hi there! 
-What I've built here is a little app based on information about properties on sale within the Spanish territory. The final product is a streamlit app that holds three different pages: 
+## What is this all about?
+Hi there!
+What I've built here is a little app based on information about properties on sale within the Spanish territory. The final product is a streamlit app that holds three different pages:
 
-* **Preliminary Data Exploration** : 
-This section offers basic information on the dataset and allows the user to experiment a bit with its distribution on a map. You can check the complete dataframe used, or scroll down to make comparison between different cities, provinces or autonomous communities. 
-
+* **Dataset information** :
+This section offers basic information on the dataset and allows the user to experiment a bit with its distribution on a map. You can check the complete dataframe used, or scroll down to make comparison between different cities, provinces or autonomous communities.
+* **Data Analysis** :
+This is just a page with a quick analysis of the main attributes of the data. ("Currently under construction!")
 * **Exploratory Data Analysis**:
-On this page, you'll be able to do some basic data exploration using charts and other statistical markers. The program also allows the selection of specific regions in Spain and other filtering of attributes. You could for example select all properties in Cataluña with prices below a certain number and then plot a histogram based on bathrooms number.  You can then save a csv with the selected properties in 'csv_exports' folder and plotted images as a .png in "img_exports" folder. 
+On this page, you'll be able to do some basic data exploration using charts and other statistical markers. The program also allows the selection of specific regions in Spain and other filtering of attributes. You could for example select all properties in Cataluña with prices below a certain number and then plot a histogram based on bathrooms number.  You can then save a csv with the selected properties in 'csv_exports' folder and plotted images as a .png in "img_exports" folder.
 * **Machine learning**:
-This page will allow you to make predictions on the price of a property. At first the program will demand key values about the property, like house type, amount of rooms and bathrooms, surface or (at least) an approximate address in order to let the program get coordinates. Once this is done, you can choose to get a prediction based solely on that information or you can determine a "price cluster" based on the surrounding properties already present in the dataset. This adds a dimension of human knowledge (and of course human error) to the prediction. This function will be described in greater detail later. 
-## How to use 
+This page will allow you to make predictions on the price of a property. At first the program will demand key values about the property, like house type, amount of rooms and bathrooms, surface or (at least) an approximate address in order to let the program get coordinates. Once this is done, you can choose to get a prediction based solely on that information or you can determine a "price cluster" based on the surrounding properties already present in the dataset. This adds a dimension of human knowledge (and of course human error) to the prediction. This function will be described in greater detail later.
+## How to use
 To start the program simply `$ streamlit run main.py` !
 ## Folder structure
 <pre>
@@ -40,7 +41,7 @@ The main aspects of the project are finished. There are still some minor bugs th
 * Add more rows to the dataset (100k-200k)
 * Improve machine learning model
 ## Technology stack
-Libraries used: 
+Libraries used:
 * Python
 * Pandas
 * Scikit-learn
@@ -55,12 +56,12 @@ Libraries used:
 *(See requirements.txt in main folder)*
 
 ### The info obtained
-When I was done with the scrapping process, I was left with a total of 3476 files. From those files, I filtered the information to get data on: 
+When I was done with the scrapping process, I was left with a total of 3476 files. From those files, I filtered the information to get data on:
 * Price
 * Rooms
 * Bathrooms
 * Surface
-* Price/m² 
+* Price/m²
 * Pools (boolean)
 * Air conditioner (boolean)
 * Type (Flat, House chalet...)

@@ -1,6 +1,4 @@
 from time import asctime
-import plotly.express as px
-import plotly.graph_objects as go
 import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -111,7 +109,7 @@ def scatter(data, numerics): #Scatter plot generator
     plt.title(title, fontsize = 40)
     plt.legend()
     st.pyplot(fig)
-    st.write(data.index.unique())
+    #st.write(data.index.unique())
     return fig
 
 def histograms(data):   #Histogram generator

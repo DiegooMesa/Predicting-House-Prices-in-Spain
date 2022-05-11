@@ -20,8 +20,8 @@ def info_input(data):
     autcom = col3.selectbox("Autonomous Community", autCom)
 
     col4, col5, col6 = st.columns(3)
-    rooms = col4.slider("Rooms", 0, data.Rooms.max())
-    bathrooms = col5.slider("Bathrooms", data.Bathrooms.min(), data.Bathrooms.max())
+    rooms = col4.slider("Rooms", 0, 20)
+    bathrooms = col5.slider("Bathrooms", 0, 20)
     surface = col6.number_input('Surface (m2)')
 
     col7, col8, col9 = st.columns(3)
